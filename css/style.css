@@ -1785,9 +1785,9 @@ input[type=text].form-search__input::-webkit-input-placeholder {
     line-height: 16px;
 }
 
-.tippy-box > .tippy-svg-arrow {
+/* .tippy-box > .tippy-svg-arrow {
     fill: green;
-}
+} */
 
 @media (min-width: 1200px) {
     .project__svg:hover {
