@@ -24,45 +24,45 @@ document.querySelector(".header-burger__close").addEventListener("click", functi
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".about-container").addEventListener("click", function() {
+document.querySelector(".about-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".about-container").addEventListener("click", function() {
+document.querySelector(".about-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".gallery-container").addEventListener("click", function() {
+document.querySelector(".gallery-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".gallery-container").addEventListener("click", function() {
+document.querySelector(".gallery-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".catalog").addEventListener("click", function() {
+document.querySelector(".catalog-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".catalog").addEventListener("click", function() {
+document.querySelector(".catalog-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".events").addEventListener("click", function() {
+document.querySelector(".events-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".events").addEventListener("click", function() {
+document.querySelector(".events-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".project").addEventListener("click", function() {
+document.querySelector(".project-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".project").addEventListener("click", function() {
+document.querySelector(".project-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
-document.querySelector(".contact").addEventListener("click", function() {
+document.querySelector(".contact-link").addEventListener("click", function() {
   document.querySelector(".header-burger").classList.remove("active-header-burger");
 }),
-document.querySelector(".contact").addEventListener("click", function() {
+document.querySelector(".contact-link").addEventListener("click", function() {
   document.querySelector("body").classList.remove("lock");
 })
 
@@ -433,21 +433,21 @@ tippy('.project__tooltip-1', {
   content: 'Пример современных тенденций - современная методология разработки',
   // allowHTML: true,
   placement: 'top',
-  arrow: false,
+  arrow: true,
 });
 
 tippy('.project__tooltip-2', {
   content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
   allowHTML: true,
   placement: 'top',
-  arrow: false
+  arrow: true
 });
 
 tippy('.project__tooltip-3', {
   content: 'В стремлении повысить качество',
   allowHTML: true,
   placement: 'top',
-  arrow: false
+  arrow: true
 });
 
 // map  

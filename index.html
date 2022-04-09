@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <link  rel="stylesheet" href="tippy.js/dist/svg-arrow.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -335,32 +336,32 @@
                 </button>
                 <ul class="header-burger__ul ul-reset" id="header-burger__ul">
                     <li class="header-burger__li">
-                        <a class="header-burger__a about-container" href="#about-container">
+                        <a class="header-burger__a about-link" href="#about-container">
                             О нас
                         </a>
                     </li>
                     <li class="header-burger__li">
-                        <a class="header-burger__a gallery-container" href="#gallery-container">
+                        <a class="header-burger__a gallery-link" href="#gallery-container">
                             Галерея
                         </a>
                     </li>
                     <li class="header-burger__li">
-                        <a class="header-burger__a catalog" href="#catalog">
+                        <a class="header-burger__a catalog-link" href="#catalog">
                             Каталог
                         </a>
                     </li>
                     <li class="header-burger__li">
-                        <a class="header-burger__a events" href="#events">
+                        <a class="header-burger__a events-link" href="#events">
                             События
                         </a>
                     </li>
                     <li class="header-burger__li">
-                        <a class="header-burger__a project" href="#project">
+                        <a class="header-burger__a project-link" href="#project">
                             Проекты
                         </a>
                     </li>
                     <li class="header-burger__li">
-                        <a class="header-burger__a contact" href="#contact">
+                        <a class="header-burger__a contact-link" href="#contact">
                             Контакты
                         </a>
                     </li>
@@ -1440,7 +1441,7 @@
                         <path class="project__svg-x" style="transform: translate(4px, 4px);"  d="M6.91016 0.491699L7.9545 1.53604L1.20523 8.28531L0.160892 7.24096L6.91016 0.491699Z" fill="white"/>
                         <path class="project__svg-x" style="transform: translate(4px, 4px);" d="M7.79297 7.08008L6.74863 8.12442L-0.000637044 1.37516L1.04371 0.330814L7.79297 7.08008Z" fill="white"/>
                     </svg>
-                    <span class="project-arrow"></span>
+                    <!-- <span class="project-arrow"></span> -->
                 </button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button class="btn-reset project__tooltip project__tooltip-2">
                     <svg class="project__svg" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg" >
                         <path class="project__svg-o" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
@@ -1448,7 +1449,7 @@
                         <path class="project__svg-x" style="transform: translate(4px, 4px);"  d="M6.91016 0.491699L7.9545 1.53604L1.20523 8.28531L0.160892 7.24096L6.91016 0.491699Z" fill="white"/>
                         <path class="project__svg-x" style="transform: translate(4px, 4px);" d="M7.79297 7.08008L6.74863 8.12442L-0.000637044 1.37516L1.04371 0.330814L7.79297 7.08008Z" fill="white"/>
                     </svg>
-                    <span class="project-arrow"></span>
+                    <!-- <span class="project-arrow"></span> -->
                 </button> исключительно в разрезе маркетинговых и финансовых <button class="btn-reset project__tooltip project__tooltip-3">
                     <svg class="project__svg" width="16" height="16" viewBox="0 0 16 16"  xmlns="http://www.w3.org/2000/svg" >
                         <path class="project__svg-o" d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z" stroke="#9D5CD0"/>
@@ -1456,7 +1457,7 @@
                         <path class="project__svg-x" style="transform: translate(4px, 4px);"  d="M6.91016 0.491699L7.9545 1.53604L1.20523 8.28531L0.160892 7.24096L6.91016 0.491699Z" fill="white"/>
                         <path class="project__svg-x" style="transform: translate(4px, 4px);" d="M7.79297 7.08008L6.74863 8.12442L-0.000637044 1.37516L1.04371 0.330814L7.79297 7.08008Z" fill="white"/>
                     </svg>
-                    <span class="project-arrow"></span>
+                    <!-- <span class="project-arrow"></span> -->
                 </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="project__link" href="blanchard-art.ru/projects" target="_blank">blanchard-art.ru/projects</a>
                 <a class="project__link project__link-768" href="blanchard-art.ru" target="_blank">blanchard-art.ru</a>
             </p>
@@ -1586,9 +1587,9 @@
                 </div>
             </div>
         </section>
-        <section class="map">
-            <div id="firstMap" class="map__first"></div>
-        </section>
+        <div class="map">
+            <div id="firstMap" class="h-reset map__first"></div>
+        </div>
         <footer class="footer" id="footer">
             <div class="footer-container container flex">
                 <div class="footer-logo">
@@ -1630,7 +1631,7 @@
     <script src="js/choices.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script> -->
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>
