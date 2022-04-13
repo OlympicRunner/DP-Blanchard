@@ -1761,6 +1761,10 @@ input[type=text].form-search__input::-webkit-input-placeholder {
     border-radius: 0;
 }
 
+.tippy-box > .tippy-arrow:before {
+    color: #9D5CD0;
+}
+
 .tippy-content {
     max-width: 240px;
     text-align: center;
