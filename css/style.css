@@ -1868,62 +1868,49 @@ input[type=text].form-search__input::-webkit-input-placeholder {
 
 .partners__slide {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
+    outline: none;
     cursor: pointer;
 }
 
-.partners__slide-btn:after {
+.partners__slide:after {
     position: absolute;
     content: "";
-    left: 1px;
-    right: 1px;
-    top: 1px;
-    bottom: 1px;
-    border: 1px solid #cacaca;
-    -webkit-transition: 0.5s border ease-in-out;
-    transition: 0.5s border ease-in-out;
-}
-
-.partners__slide-btn:focus-visible + .partners__slide-btn:after {
-    border: 1px solid red;
+    border: 1px solid #CACACA;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .3s border  ease-in-out;
 }
 
 .partners__img {
-    opacity: 0.4;
-    -webkit-filter: #CACACA;
-            filter: #CACACA;
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    -webkit-transition: 0.3s opacity ease-in-out, 0.4s -webkit-filter ease-in-out;
-    transition: 0.3s opacity ease-in-out, 0.4s -webkit-filter ease-in-out;
-    transition: 0.4s filter ease-in-out, 0.3s opacity ease-in-out;
-    transition: 0.4s filter ease-in-out, 0.3s opacity ease-in-out, 0.4s -webkit-filter ease-in-out;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transform: scale(0.9);
+    transition: .3s opacity ease-in-out, .3s filter ease-in-out;
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
     .partners__slide:hover .partners__img {
-        -webkit-filter: grayscale(0);
-                filter: grayscale(0);
         opacity: 1;
+        filter: grayscale(0);
     }
 }
 
 .partners__slide:active .partners__img {
-    -webkit-filter: grayscale(0);
-            filter: grayscale(0);
     opacity: 1;
-}
-.partners__slide-btn:active:after {
-    border-color: var(--violet-focus);
+    filter: grayscale(0);
 }
 
-.partners__slide-btn:focus-visible:after {
-    border-color: var(--violet-focus);
+.partners__slide:active:after {
+    border: 1px solid #9D5CD0;
+}
+
+.partners__slide:focus-visible:after {
+    border: 1px solid #9D5CD0;
 }
 
 .partners__svg-btn path {
